@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MGP</title>
+  </head>
+  <body id="body">
+    <div class="sideBar">
+      <div class="logoContent">
+        <div class="logo">
+          <img src="img/logo.png">
+          <h1 class="logoName">MGP</h1>
+        </div>
+      </div>
+      <ul class="navList">
+        <li>
+          <a class="ancHome">
+            <img src="img/home.png">
+            <span class="linksName">HOME</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navList">
+        <li>
+          <a class="ancRelevancia">
+            <img src="img/relevancia.png">
+            <span class="linksName">RELEVÂNCIA</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navList">
+        <li>
+          <a class="ancAlfabetica">
+            <img src="img/alfabetica.png">
+            <span class="linksName">ALFABÉTICA</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navList">
+        <li>
+          <a class="ancMmorpg">
+            <img src="img/mmo.png">
+            <span class="linksName">MMORPG</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navList">
+        <li>
+          <a class="ancMoba">
+            <img src="img/battle.png">
+            <span class="linksName">MOBA</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navList">
+        <li>
+          <a class="ancCard">
+            <img src="img/card.png">
+            <span class="linksName">CARD</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navList">
+        <li>
+          <a class="ancStrategy">
+            <img src="img/strategy.png">
+            <span class="linksName">ESTRATÉGIA</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navList">
+        <li>
+          <a class="ancOpenWorld">
+            <img src="img/openworld.png">
+            <span class="linksName">OPEN WORLD</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="homeContent">
+      <div class="galleryBanner">
+        <div class="slider">
+          <div class="slides">
+            <!--Botôes Radio-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--Fim Botôes Radio-->
+  
+            <!--Slide images-->
+            <div id="img1" class="slide first">
+            </div>
+            <div id="img2" class="slide">
+            </div>
+            <div id="img3" class="slide">
+            </div>
+            <div id="img4" class="slide">
+            </div>
+            <!--Fim Slide images-->
+  
+            <!--Navegação automática-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+            <!--Fim Navegação automática-->
+          </div>
+  
+          <!--Navegação Manual-->
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+          <!--Fim Navegação Manual-->
+        </div>
+      </div>
+      <button class="removeBotao" id="carregarMais">carregar mais</button>
+      <div class="gallery"></div>
+    </div>
+    <nav class="headerNav">
+      <div class="ancorasDiv">
+        <a class="PC">PC</a>
+        <a class="Browser">Browser</a>
+        <a class="All">All</a>
+        <a class="Favoritos" onclick="favorite()">Favoritos</a>
+      </div>
+      <form id="formulario">
+        <div class="divCategorias">
+          <div class="divOptions">
+            <select id="selecione5" name="selecione">
+              <option name="selecione" selected="" disabled="">Selecione a plataforma</option>
+              <option name="selecione" id="PC2" value="">PC</option>
+              <option name="selecione" id="BROWSER2" value="2">BROWSER</option>
+            </select>
+          </div>
+          <div class="divCheckboxs">
+            <div>
+              <input type="checkbox" id="POPULAR">
+              <label for="POPULAR">Populares</label>
+            </div>
+            <div>
+              <input type="checkbox" id="RELEVANCE">
+              <label for="RELEVANCE">Relevância</label>
+            </div>
+            <div>
+              <input type="checkbox" id="ALFABET">
+              <label for="ALFABET">Alfabética</label>
+            </div>
+            <div>
+              <input type="checkbox" id="MMORPG2">
+              <label for="MMORPG2">MMORPG</label>
+            </div>
+            <div>
+              <input type="checkbox" id="MOBA2">
+              <label for="MOBA2">MOBA</label>
+            </div>
+            <div>
+              <input type="checkbox" id="CARD2">
+              <label for="CARD2">CARD</label>
+            </div>
+            <div>
+              <input type="checkbox" id="ESTRATEGIA2">
+              <label for="ESTRATEGIA2">Estratégia</label>
+            </div>
+            <div>
+              <input type="checkbox" id="OPENWORD2">
+              <label for="OPENWORD2">Open Word</label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <input type="submit" value="FILTRAR" class="FILTRAR">
+        </div>
+      </form>
+    </nav>
+    <script src="script.js"></script>
+  </body>
+</html>
